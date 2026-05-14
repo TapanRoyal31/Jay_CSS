@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 
+        Display property specifies the display behavior (the type of rendering box) of an element.
+        The default display value for most elements is 'block' for div and 'inline' for span.
+        block elements start on a new line and take up the full width available, 
+        while inline elements do not start on a new line and only take up as much width as necessary.
+        inline-block elements behave like inline elements but can have a width and height.
+        table elements have their own display values like 'table', 'table-row', 'table-cell', etc.
+    */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #212121;
+      color: white;
+    }
+    div {
+        height: 200px;
+        width:200px;
+        border: 1px solid red;
+        display: inline-block;
+    }
+    span {
+        height: 200px;
+        width:200px;
+        border: 1px solid red;
+        display: inline-block;
+    }
+  </style>
+  <body>
+    <div>div tag</div>
+    <span>span tag</span>
+    <table></table>
+  </body>
+</html>
