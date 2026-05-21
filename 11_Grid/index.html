@@ -18,42 +18,30 @@
       justify-content: center;
       align-items: center;
     }
-    .container {
-      height: 90%;
-      width: 60%;
-      border: 1px solid red;
-    }
-
     .box {
+      border: 1px solid red;
       background-color: aqua;
       color: black;
       font-size: large;
-      height: 100px;
-      width: 100px;
-      flex-shrink: 1;
-      flex-grow: 1;
+      font-weight: 600;
     }
-
     .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
     }
-     .grow{
-      flex-grow: 5;
-     }
-     .shrink{
-      flex-shrink: 5;
-     }
   </style>
   <body>
     <div class="container">
-      <div class="box grow">01</div>
-      <div class="box">02</div>
-      <div class="box">03</div>
-      <div class="box">04</div>
-      <div class="box shrink">05</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
     </div>
   </body>
 </html>
