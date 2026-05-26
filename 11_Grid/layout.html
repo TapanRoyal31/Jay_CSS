@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      border: 1px solid red;
+      height: 400px;
+      width: 700px;
+      display: grid;
+      gap: 5px;
+      grid-template-areas:
+        "ora ora ora ora blu blu blu"
+        "gra gra gra cir blu blu blu"
+        "gra gra gra cir pur pin pin"
+        "gra gra gra cir pur pin pin"
+        "gra gra gra cir pur pin pin"
+        "gre gre gre gre gre gre gre"
+        ;
+    }
+    .orange {
+      background-color: orangered;
+      grid-area: ora;
+    }
+
+    .blue {
+      background-color: aquamarine;
+      grid-area: blu;
+    }
+
+    .gray {
+      background-color: lightslategray;
+      grid-area: gra;
+    }
+    .purple {
+      background-color: purple;
+      grid-area: pur;
+    }
+    .pink {
+      background-color: pink;
+      grid-area: pin;
+    }
+    .green {
+      background-color: greenyellow;
+      grid-area: gre;
+    }
+    .green1 {
+      background-color: greenyellow;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .red {
+      background-color: tomato;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .blue1 {
+      background-color: aquamarine;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .orange1 {
+      background-color: orangered;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .circle{
+        grid-area: cir;
+    }
+
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="orange"></div>
+      <div class="blue"></div>
+      <div class="gray"></div>
+      <div class="purple"></div>
+      <div class="pink"></div>
+      <div class="circle">
+        <div class="green1"></div>
+        <div class="orange1"></div>
+        <div class="blue1"></div>
+        <div class="red"></div>
+      </div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
