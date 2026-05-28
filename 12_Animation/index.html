@@ -35,21 +35,35 @@
         animation-timing-function: ease;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-        animation-play-state: paused;
-    }
-
-    .box:hover{
         animation-play-state: running;
     }
 
-    @keyframes rotate {
+
+    /* @keyframes rotate {
         from{
-            transform: rotate(0deg);
+            transform: translateX(-500px) rotate(0deg);
+            background-color: aqua;
+            border-radius: 0px;
         }
         to{
-            transform: rotate(360deg);
+            transform: translateX(0px) rotate(360deg);
+            background-color: yellow;
+            border-radius: 50%;
         }
-    }
+    } */
+
+
+     @keyframes rotate {
+        0%{
+            border: 10px solid red;
+        }
+        50%{
+            border: 40px solid blue;
+        }
+        100%{
+            border: 10px solid dodgerblue;
+        }
+     }
 </style>
 <body>
     <div class="box">CSS Animation</div>
