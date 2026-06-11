@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*  
+        Descendant Combinator : space 
+        child combinator : >
+        next sibling : +
+        subsequent : ~
+    */
+    .container ~ p{
+        color: red;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>text paragraph #1</p>
+        <p target="_blank">text paragraph #2</p>
+        <div>
+            <p>text paragraph #3</p>
+        </div>
+    </div>
+
+    <p>text paragraph #4</p>
+    <p title="attribute">text paragraph #5</p>
+</body>
+</html>

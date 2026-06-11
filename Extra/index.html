@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Variables :- to store anything */
+
+    :root {
+      --color: grey;
+      --font-size: 34px;
+      --gradiant: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      height: 300px;
+      width: 300px;
+      font-size: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid red;
+      background-image: var(--gradiant);
+      background-clip: text;
+      color: white;
+      animation: coloranimate 2s ease infinite alternate;
+    }
+
+    @keyframes coloranimate {
+        from{
+            color: white;
+        }
+        to{
+            color: cadetblue;
+        }
+    }
+  </style>
+  <body>
+    <div class="box">Hover me</div>
+  </body>
+</html>
